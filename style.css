@@ -896,7 +896,17 @@ footer {
     background: #1e1e1e;
     color: #888;
 }
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
 @media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
     .nav-links {
         display: none;
         position: absolute;
@@ -906,11 +916,18 @@ footer {
         background: #1e1e1e;
         flex-direction: column;
         padding: 1rem;
+        z-index: 100;
     }
     .nav-links.active {
         display: flex;
     }
+    .nav-links li {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
     .resume-btn {
         margin-left: 0;
+        width: 100%;
+        text-align: center;
     }
 }

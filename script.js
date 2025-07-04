@@ -42,3 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
         easing: 'ease-in-out'
     });
 });
+const mobileMenuToggle = document.createElement('div');
+mobileMenuToggle.className = 'mobile-menu-toggle';
+mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+document.querySelector('nav').appendChild(mobileMenuToggle);
+mobileMenuToggle.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
