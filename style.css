@@ -896,3 +896,21 @@ footer {
     background: #1e1e1e;
     color: #888;
 }
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #1e1e1e;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .resume-btn {
+        margin-left: 0;
+    }
+}
